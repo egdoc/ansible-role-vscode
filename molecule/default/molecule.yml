@@ -1,0 +1,16 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: redhat-instance
+    image: geerlingguy/docker-rockylinux8-ansible:latest
+    pre_build_image: true
+  - name: debian-instance
+    image: geerlingguy/docker-debian11-ansible:latest
+    pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible

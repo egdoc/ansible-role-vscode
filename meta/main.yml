@@ -1,0 +1,13 @@
+galaxy_info:
+  author: Egidio Docile
+  namespace: egdoc
+  role_name: vscode
+  description: Ansible role to install Visual Studio Code on Linux
+  license: license GPL-2.0
+  min_ansible_version: 2.1
+  galaxy_tags:
+    - vscode
+    - linux
+    - code
+
+dependencies: []

@@ -1,0 +1,5 @@
+---
+vscode_gpg_key_url: https://packages.microsoft.com/keys/microsoft.asc
+vscode_gpg_key_fingerpint: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+vscode_rpm_repository_url: https://packages.microsoft.com/yumrepos/vscode
+vscode_apt_repository_url: deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.asc] https://packages.microsoft.com/repos/code stable main
