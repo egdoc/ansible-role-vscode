@@ -4,12 +4,15 @@
     path: /etc/apt/keyrings
     state: directory
     owner: root
-    mode: 755
+    mode: '755'
 
 - name: Ensure Visual Studio Code gpg key is in place
   ansible.builtin.get_url:
     url: '{{ vscode_gpg_key_url }}'
     dest: /etc/apt/keyrings/packages.microsoft.asc
+    owner: root
+    group: root
+    mode: '644'
 
 - name: Ensure Visual Studio Code repository exists
   ansible.builtin.apt_repository:
