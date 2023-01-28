@@ -2,9 +2,23 @@ galaxy_info:
   author: Egidio Docile
   namespace: egdoc
   role_name: vscode
+  standalone: true
   description: Ansible role to install Visual Studio Code on Linux
   license: license GPL-2.0
-  min_ansible_version: 2.1
+  min_ansible_version: '2.1'
+  platforms:
+    - name: Fedora
+      version: all
+    - name: EL
+      version:
+        - 7
+        - 8
+        - 9
+    - name: Debian
+      versions:
+        - buster
+        - bullseye
+
   galaxy_tags:
     - vscode
     - linux
