@@ -7,9 +7,9 @@
         name: gnupg
         update_cache: true
         force_apt_get: true
-      when: ansible_facts.os_family|lower == "debian"
+      when: ansible_facts.os_family | lower == "debian"
 
   tasks:
     - name: "Include egdoc.vscode"
-      include_role:
+      ansible.builtin.include_role:
         name: "egdoc.vscode"
