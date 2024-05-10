@@ -1,11 +1,6 @@
 ---
-- name: Include os-specific tasks (redhat-family)
-  ansible.builtin.include_tasks: redhat.yml
-  when: ansible_facts.os_family|lower == "redhat"
-
-- name: Include os-specific tasks (debian-family)
-  ansible.builtin.include_tasks: debian.yml
-  when: ansible_facts.os_family|lower == "debian"
+- name: Include os-specific tasks
+  ansible.builtin.include_tasks: '{{ ansible_facts.os_family | lower }}.yml'
 
 - name: Ensure Visual Studio Code is installed
   ansible.builtin.package:
