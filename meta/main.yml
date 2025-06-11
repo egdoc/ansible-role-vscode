@@ -11,13 +11,10 @@ galaxy_info:
       version: all
     - name: EL
       version:
-        - 7
-        - 8
         - 9
     - name: Debian
       versions:
-        - buster
-        - bullseye
+        - bookworm
 
   galaxy_tags:
     - vscode
